@@ -1,4 +1,5 @@
 \documentclass{article}
+%\usepackage[landscape,legalpaper]{geometry}
 \usepackage{geometry}
 \geometry{noheadfoot, margin=0.5in}
 \usepackage{prerex}
@@ -16,16 +17,14 @@
 \reqhalfcourse 15,50:{MATH-210}{Rings \&\\Fields}{W}
   \prereq 35,63,15,50:
 \halfcourse 25,50:{MATH-272}{Numeric.\\Methods}{W}
-  \prereq 25,56,25,50:
-  \prereq 35,63,25,50:
 \reqhalfcourse 35,50:{MATH-231}{Diff.\\Equat.}{F}
   \prereq 55,63,35,50:
 \halfcourse 45,50:{MATH-228}{Complex\\Analysis}{?}
-  \prereq 55,63,45,50:
   \prereq 35,63,45,50:
+  \prereq 55,63,45,50:
 \reqhalfcourse 55,50:{MATH-280}{Advanced\\Calculus}{?}
-  \prereq 55,63,55,50:
   \prereq 35,63,55,50:
+  \prereq 55,63,55,50:
 \reqhalfcourse 66,50:{MATH-281}{Real\\Analysis}{W}
   \prereq 55,63,66,50:
 \reqhalfcourse 77,50:{STAT-268}{Statistics\\\& Probab. I}{F}
@@ -33,20 +32,20 @@
 \mini 2,46:{MATH-280}
 \mini 41,46:{MATH-281}
 \halfcourse 3,40:{MATH-341}{Diff.\\Geom}{?}
-  \prereqc 35,63,3,40;60:
   \prereq 2,46,3,40:
+  \prereqc 35,63,3,40;60:
 \halfcourse 11,40:{MATH-310}{Group\\Theory}{?}
   \prereq 15,50,11,40:
 \halfcourse 22,40:{MATH-311}{Elem. Number\\Theory}{?}
   \prereq 15,50,22,40:
 \halfcourse 37,40:{MATH-334}{Math. Methods\\for Eng. \& Phys.}{?}
-  \prereq 41,46,37,40:
   \prereq 35,50,37,40:
+  \prereq 41,46,37,40:
 \halfcourse 52,40:{MATH-326}{Functs. of a\\Complex Var.}{?}
   \prereq 66,50,52,40:
 \reqhalfcourse 66,40:{STAT-268}{Statistics\\\& Probab. II}{W}
-  \prereq 77,50,66,40:
   \prereq 55,50,66,40:
+  \prereq 77,50,66,40:
 \halfcourse 80,40:{MATH-328}{Real Analysis}{?}
   \prereq 66,50,80,40:
 \mini 2,36:{}
@@ -59,27 +58,53 @@
 \mini 71,34:{OR}
 \mini 81,34:{OR}
 \halfcourse 7,30:{MATH-418}{Number Theory\\\& Cryptography}{?}
-  \prereqc 21,36,7,30;45:
   \recomm 11,40,7,30:
+  \prereqc 21,36,7,30;45:
 \halfcourse 17,30:{MATH-401}{Graph\\Theory}{F}
   \prereqc 21,36,17,30;45:
 \halfcourse 25,30:{MATH-402}{Combina-\\torics}{?}
   \prereqc 21,36,25,30;45:
 \halfcourse 35,30:{MATH-405}{Appl. of\\Matrix Alg.}{?}
-  \prereqc 21,36,35,30;45:
   \prereq 37,36,35,30:
+  \prereqc 21,36,35,30;45:
 \halfcourse 46,30:{MATH-335}{Math. of\\Eng. Systems}{?}
-  \prereq 37,40,46,30:
   \prereq 45,50,46,30:
+  \prereq 37,40,46,30:
 \halfcourse 57,30:{MATH-436}{Partial Diff.\\Equations}{?}
-  \prereqc 69,36,57,30;45:
   \prereq 57,36,57,30:
+  \prereqc 69,36,57,30;45:
 \halfcourse 69,30:{MATH-387}{Elem. Geom.---\\an Adv. Persp.}{?}
-  \prereq 69,36,69,30:
   \prereqc 83,36,69,30;45:
+  \prereq 69,36,69,30:
 \halfcourse 83,30:{MATH-439}{Lagrangian Mech.,\\Dynam. \& Control}{?}
-  \prereqc 69,36,83,30;45:
   \prereq 83,36,83,30:
+  \prereqc 69,36,83,30;45:
+\mini 2,26:{MATH-280}
+\mini 25,26:{MATH-110}
+\mini 37,26:{STAT-367}
+\mini 60,26:{MATH-120}
+\mini 79,26:{STAT-268}
+\halfcourse 7,20:{MATH-434}{Linear \& Nonlin.\\Optimization}{?}
+  \prereq 2,26,7,20:
+  \prereqc 25,26,7,20;45:
+\halfcourse 18,20:{MATH-312}{Linear\\Algebra}{?}
+  \prereqc 25,26,18,20;30:
+\halfcourse 29,20:{MATH-337}{Intro. to Oper.\\Research Models}{?}
+  \prereqc 37,26,29,20;30:
+  \prereqc 25,26,29,20;30:
+\halfcourse 42,20:{MATH-339}{Evolutionary\\Game Theory}{?}
+  \prereqc 60,26,42,20;45:
+  \recommc 25,26,42,20;45:
+\halfcourse 54,20:{MATH-381}{Math. with a\\Hist. Persp.}{?}
+  \prereqc 60,26,54,20;30:
+\halfcourse 66,20:{MATH-384}{Math. Theory\\of Interest}{?}
+  \prereqc 60,26,66,20;30:
+\halfcourse 79,20:{MATH-385}{Life\\Contingencies}{?}
+  \prereq 79,26,79,20:
+  \prereqc 60,26,79,20;45:
+  \prereq 66,20,79,20:
   \coreq 35,50,25,50:
+  \prereq 35,63,25,50:
+  \prereq 25,56,25,50:
 \end{chart}
 \end{document}
