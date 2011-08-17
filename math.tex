@@ -3,132 +3,150 @@
 \usepackage{geometry}
 \geometry{noheadfoot, margin=0.5in}
 \usepackage{prerex}
+%\setcounter{diagheight}{70}
+\setcounter{diagheight}{80}
 \begin{document}
 \thispagestyle{empty}
 \begin{chart}
-\grid
-\mini 30,70:{MHF4U}
-\mini 49,70:{MCV4U}
-\reqfullcourse 35,63:{MATH-110}{Linear\\Algebra}{FW}
-  \prereq 30,70,35,63:
-\reqfullcourse 55,63:{MATH-120}{Diff. \& Int.\\Calculus}{FW}
-  \prereq 49,70,55,63:
-\mini 25,56:{CISC-1xx}
-\reqhalfcourse 15,50:{MATH-210}{Rings \&\\Fields}{W}
-  \prereqc 35,63,15,50;25:
-\halfcourse 25,50:{MATH-272}{Numeric.\\Methods}{W}
-  \prereq 25,56,25,50:
-  \prereq 35,63,25,50:
-\reqhalfcourse 35,50:{MATH-231}{Diff.\\Equat.}{F}
-  \prereq 55,63,35,50:
-\halfcourse 45,50:{MATH-228}{Complex\\Analysis}{?}
-  \prereq 55,63,45,50:
-  \prereq 35,63,45,50:
-\reqhalfcourse 55,50:{MATH-280}{Advanced\\Calculus}{?}
-  \prereq 55,63,55,50:
-  \prereq 35,63,55,50:
-\reqhalfcourse 66,50:{MATH-281}{Real\\Analysis}{W}
-  \prereq 55,63,66,50:
-\reqhalfcourse 77,50:{STAT-268}{Statistics\\\& Probab. I}{F}
-  \prereq 55,63,77,50:
-\mini 3,46:{MATH-280}
-\mini 40,46:{MATH-281}
-\halfcourse 3,40:{MATH-341}{Diff.\\Geom}{?}
-  \prereqc 35,63,3,40;60:
-  \prereq 3,46,3,40:
-\halfcourse 11,40:{MATH-310}{Group\\Theory}{?}
-  \prereq 15,50,11,40:
-\halfcourse 22,40:{MATH-311}{Elem. Number\\Theory}{?}
-  \prereq 15,50,22,40:
-\halfcourse 37,40:{MATH-334}{Math. Methods\\for Eng. \& Phys.}{?}
-  \prereq 40,46,37,40:
-  \prereq 35,50,37,40:
-\halfcourse 52,40:{MATH-326}{Functs. of a\\Complex Var.}{?}
-  \prereq 66,50,52,40:
-\reqhalfcourse 66,40:{STAT-268}{Statistics\\\& Probab. II}{W}
-  \prereq 77,50,66,40:
-  \prereq 55,50,66,40:
-\halfcourse 80,40:{MATH-328}{Real Analysis}{?}
-  \prereq 66,50,80,40:
-\mini 2,36:{}
-\mini 20,36:{MATH-210}
-\mini 33,36:{MATH-312}
-\mini 57,36:{MATH-231}
-\mini 69,36:{MATH-280}
-\mini 83,36:{MATH-281}
-\mini 31,34:{OR}
-\mini 71,34:{OR}
-\mini 81,34:{OR}
-\halfcourse 6,30:{MATH-418}{Number Theory\\\& Cryptography}{?}
-  \prereqc 20,36,6,30;45:
-  \recomm 11,40,6,30:
-\halfcourse 16,30:{MATH-401}{Graph\\Theory}{F}
-  \prereqc 20,36,16,30;45:
-\halfcourse 24,30:{MATH-402}{Combina-\\torics}{?}
-  \prereqc 20,36,24,30;45:
-\halfcourse 33,30:{MATH-405}{Appl. of\\Matrix Alg.}{?}
-  \prereqc 20,36,33,30;45:
-  \prereq 33,36,33,30:
-\halfcourse 45,30:{MATH-335}{Math. of\\Eng. Systems}{?}
-  \prereq 37,40,45,30:
-  \prereq 45,50,45,30:
-\halfcourse 57,30:{MATH-436}{Partial Diff.\\Equations}{?}
-  \prereqc 69,36,57,30;45:
-  \prereq 57,36,57,30:
-\halfcourse 69,30:{MATH-387}{Elem. Geom.---\\an Adv. Persp.}{?}
-  \prereq 69,36,69,30:
-  \prereqc 83,36,69,30;45:
-\halfcourse 83,30:{MATH-439}{Lagrangian Mech.,\\Dynam. \& Control}{?}
-  \prereqc 69,36,83,30;45:
-  \prereq 83,36,83,30:
-\mini 10,26:{MATH-280}
-\mini 28,26:{MATH-110}
-\mini 40,26:{STAT-367}
-\mini 63,26:{MATH-120}
-\mini 82,26:{STAT-268}
-\halfcourse 10,20:{MATH-434}{Linear \& Nonlin.\\Optimization}{?}
-  \prereqc 28,26,10,20;45:
-  \prereq 10,26,10,20:
-\halfcourse 21,20:{MATH-312}{Linear\\Algebra}{?}
-  \prereqc 28,26,21,20;30:
-\halfcourse 32,20:{MATH-337}{Intro. to Oper.\\Research Models}{?}
-  \prereqc 28,26,32,20;30:
-  \prereqc 40,26,32,20;30:
-\halfcourse 45,20:{MATH-339}{Evolutionary\\Game Theory}{?}
-  \recommc 28,26,45,20;45:
-  \prereqc 63,26,45,20;45:
-\halfcourse 57,20:{MATH-381}{Math. with a\\Hist. Persp.}{?}
-  \prereqc 63,26,57,20;30:
-\halfcourse 69,20:{MATH-384}{Math. Theory\\of Interest}{?}
-  \prereqc 63,26,69,20;30:
-\halfcourse 82,20:{MATH-385}{Life\\Contingencies}{?}
-  \prereq 69,20,82,20:
-  \prereqc 63,26,82,20;45:
-  \prereq 82,26,82,20:
-\mini 9,16:{MATH-281}
-\mini 22,16:{MATH-280}
-\mini 33,16:{MATH-231}
-\mini 45,16:{MATH-210}
-\mini 73,16:{MATH-310}
-\mini 83,16:{MATH-328}
-\halfcourse 9,10:{MATH-386}{Our Numb. Syst.---\\an Adv. Persp.}{?}
-  \prereq 9,16,9,10:
-\halfcourse 22,10:{MATH-432}{Variational\\Methods}{?}
-  \prereqc 9,16,22,10;45:
-  \prereq 22,16,22,10:
-  \prereqc 33,16,22,10;45:
-\halfcourse 33,10:{MATH-382}{Mathematical\\Explorations}{?}
-  \prereq 33,16,33,10:
-  \prereqc 45,16,33,10;45:
-\halfcourse 45,10:{MATH-406}{Intro to\\Coding Theory}{?}
-  \prereq 45,16,45,10:
-\halfcourse 59,10:{MATH-413}{Computational\\Commutative Alg.}{?}
-  \prereqc 45,16,59,10;45:
-\halfcourse 73,10:{MATH-414}{Intro. to\\Galois Theory}{?}
-  \prereqc 73,16,73,10;30:
-\halfcourse 83,10:{MATH-443}{Algebraic\\Topology}{?}
-  \prereqc 73,16,83,10;45:
-  \prereq 83,16,83,10:
-  \coreq 35,50,25,50:
+\mini 30,80:{MHF4U}
+\mini 49,80:{MCV4U}
+\reqfullcourse 35,73:{MATH-110}{Linear\\Algebra}{FW}
+  \prereq 30,80,35,73:
+\reqfullcourse 55,73:{MATH-120}{Diff. \& Int.\\Calculus}{FW}
+  \prereq 49,80,55,73:
+\mini 25,66:{CISC-1xx}
+\reqhalfcourse 15,60:{MATH-210}{Rings \&\\Fields}{W}
+  \prereqc 35,73,15,60;25:
+\halfcourse 25,60:{MATH-272}{Numeric.\\Methods}{W}
+  \prereq 25,66,25,60:
+  \prereq 35,73,25,60:
+\reqhalfcourse 35,60:{MATH-231}{Diff.\\Equat.}{F}
+  \prereq 55,73,35,60:
+\halfcourse 45,60:{MATH-228}{Complex\\Analysis}{?}
+  \prereq 55,73,45,60:
+  \prereq 35,73,45,60:
+\reqhalfcourse 55,60:{MATH-280}{Advanced\\Calculus}{?}
+  \prereq 55,73,55,60:
+  \prereq 35,73,55,60:
+\reqhalfcourse 66,60:{MATH-281}{Real\\Analysis}{W}
+  \prereq 55,73,66,60:
+\reqhalfcourse 77,60:{STAT-268}{Statistics\\\& Probab. I}{F}
+  \prereq 55,73,77,60:
+\mini 3,56:{MATH-280}
+\mini 40,56:{MATH-281}
+\halfcourse 3,50:{MATH-341}{Diff.\\Geom}{?}
+  \prereqc 35,73,3,50;60:
+  \prereq 3,56,3,50:
+\halfcourse 11,50:{MATH-310}{Group\\Theory}{?}
+  \prereq 15,60,11,50:
+\halfcourse 22,50:{MATH-311}{Elem. Number\\Theory}{?}
+  \prereq 15,60,22,50:
+\halfcourse 37,50:{MATH-334}{Math. Methods\\for Eng. \& Phys.}{?}
+  \prereq 40,56,37,50:
+  \prereq 35,60,37,50:
+\halfcourse 52,50:{MATH-326}{Functs. of a\\Complex Var.}{?}
+  \prereq 66,60,52,50:
+\reqhalfcourse 66,50:{STAT-268}{Statistics\\\& Probab. II}{W}
+  \prereq 77,60,66,50:
+  \prereq 55,60,66,50:
+\halfcourse 80,50:{MATH-328}{Real Analysis}{?}
+  \prereq 66,60,80,50:
+\mini 2,46:{}
+\mini 20,46:{MATH-210}
+\mini 33,46:{MATH-312}
+\mini 57,46:{MATH-231}
+\mini 69,46:{MATH-280}
+\mini 83,46:{MATH-281}
+\mini 31,44:{OR}
+\mini 71,44:{OR}
+\mini 81,44:{OR}
+\halfcourse 6,40:{MATH-418}{Number Theory\\\& Cryptography}{?}
+  \prereqc 20,46,6,40;45:
+  \recomm 11,50,6,40:
+\halfcourse 16,40:{MATH-401}{Graph\\Theory}{F}
+  \prereqc 20,46,16,40;45:
+\halfcourse 24,40:{MATH-402}{Combina-\\torics}{?}
+  \prereqc 20,46,24,40;45:
+\halfcourse 33,40:{MATH-405}{Appl. of\\Matrix Alg.}{?}
+  \prereqc 20,46,33,40;45:
+  \prereq 33,46,33,40:
+\halfcourse 45,40:{MATH-335}{Math. of\\Eng. Systems}{?}
+  \prereq 37,50,45,40:
+  \prereq 45,60,45,40:
+\halfcourse 57,40:{MATH-436}{Partial Diff.\\Equations}{?}
+  \prereqc 69,46,57,40;45:
+  \prereq 57,46,57,40:
+\halfcourse 69,40:{MATH-387}{Elem. Geom.---\\an Adv. Persp.}{?}
+  \prereq 69,46,69,40:
+  \prereqc 83,46,69,40;45:
+\halfcourse 83,40:{MATH-439}{Lagrangian Mech.,\\Dynam. \& Control}{?}
+  \prereqc 69,46,83,40;45:
+  \prereq 83,46,83,40:
+\mini 10,36:{MATH-280}
+\mini 28,36:{MATH-110}
+\mini 40,36:{STAT-367}
+\mini 63,36:{MATH-120}
+\mini 82,36:{STAT-268}
+\halfcourse 10,30:{MATH-434}{Linear \& Nonlin.\\Optimization}{?}
+  \prereqc 28,36,10,30;45:
+  \prereq 10,36,10,30:
+\halfcourse 21,30:{MATH-312}{Linear\\Algebra}{?}
+  \prereqc 28,36,21,30;30:
+\halfcourse 32,30:{MATH-337}{Intro. to Oper.\\Research Models}{?}
+  \prereqc 28,36,32,30;30:
+  \prereqc 40,36,32,30;30:
+\halfcourse 45,30:{MATH-339}{Evolutionary\\Game Theory}{?}
+  \recommc 28,36,45,30;45:
+  \prereqc 63,36,45,30;45:
+\halfcourse 57,30:{MATH-381}{Math. with a\\Hist. Persp.}{?}
+  \prereqc 63,36,57,30;30:
+\halfcourse 69,30:{MATH-384}{Math. Theory\\of Interest}{?}
+  \prereqc 63,36,69,30;30:
+\halfcourse 82,30:{MATH-385}{Life\\Contingencies}{?}
+  \prereq 69,30,82,30:
+  \prereqc 63,36,82,30;45:
+  \prereq 82,36,82,30:
+\mini 9,26:{MATH-281}
+\mini 22,26:{MATH-280}
+\mini 33,26:{MATH-231}
+\mini 45,26:{MATH-210}
+\mini 73,26:{MATH-310}
+\mini 83,26:{MATH-328}
+\halfcourse 9,20:{MATH-386}{Our Numb. Syst.---\\an Adv. Persp.}{?}
+  \prereq 9,26,9,20:
+\halfcourse 22,20:{MATH-432}{Variational\\Methods}{?}
+  \prereqc 9,26,22,20;45:
+  \prereq 22,26,22,20:
+  \prereqc 33,26,22,20;45:
+\halfcourse 33,20:{MATH-382}{Mathematical\\Explorations}{?}
+  \prereq 33,26,33,20:
+  \prereqc 45,26,33,20;45:
+\halfcourse 45,20:{MATH-406}{Intro to\\Coding Theory}{?}
+  \prereq 45,26,45,20:
+\halfcourse 59,20:{MATH-413}{Computational\\Commutative Alg.}{?}
+  \prereqc 45,26,59,20;45:
+\halfcourse 73,20:{MATH-414}{Intro. to\\Galois Theory}{?}
+  \prereqc 73,26,73,20;30:
+\halfcourse 83,20:{MATH-443}{Algebraic\\Topology}{?}
+  \prereqc 73,26,83,20;45:
+  \prereq 83,26,83,20:
+\mini 10,15:{MATH-281}
+\mini 22,15:{MATH-231}
+\mini 28,15:{MATH-328}
+\mini 39,15:{NON-EXISTENT STAT}
+\mini 80,15:{STAT-455}
+\halfcourse 10,10:{MATH-421}{Fourier Series}{?}
+  \prereq 10,15,10,10:
+\halfcourse 25,10:{MATH-427}{Intro. to Determ.\\Dynamical Systs.}{?}
+  \prereq 28,15,25,10:
+  \prereq 22,15,25,10:
+\halfcourse 39,10:{MATH-474}{Information\\Theory}{?}
+  \prereq 39,15,39,10:
+\halfcourse 53,10:{MATH-477}{Source Coding\\\& Quantization}{?}
+  \prereq 39,10,53,10:
+\halfcourse 68,10:{MATH-481}{Mathematical\\Logic}{?}
+\halfcourse 80,10:{MATH-484}{Data\\Networks}{?}
+  \prereq 80,15,80,10:
+  \coreq 35,60,25,60:
 \end{chart}
 \end{document}
