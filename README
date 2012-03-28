@@ -1,0 +1,5 @@
+Contains the prerequisite chart for Queen's University's Math & Stats
+department.
+
+You'll need the 'prerex' package off of CTAN to compile. Debian users can
+install the prerex and vprerex packages to edit.
