@@ -1,24 +1,33 @@
-% Copyright (C) 2011–2012 Ryan Kavanagh <rak@debian.org>
+% Copyright (C) 2011–2013 Ryan Kavanagh <rak@debian.org>
 % Copying and distribution of this file, with or without modification,
 % are permitted in any medium without royalty provided the copyright
 % notice and this notice are preserved.
 %\documentclass[9pt,legalpaper]{extarticle}
 \documentclass[9pt]{extarticle}
 %\usepackage[landscape,legalpaper]{geometry}
-%%\usepackage[LY1]{fontenc}
-%%\renewcommand{\sfdefault}{FrutigerStd-TLF}
-%%\renewcommand{\bfseries}%
-%%{\fontfamily{FrutigerStd-TLF}\fontseries{b}\fontshape{n}\selectfont}
-%%\renewcommand{\rmdefault}{\sfdefault}
-\usepackage{FrutigerStd}
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+  % For best results and consistency with the School of Computing, obtain a copy
+  % of Frutiger LT Std and uncomment the following line
+  %\setmainfont[Mapping=tex-text]{Frutiger LT Std}
+  %
+  % Computer Modern Concrete is a decent substitute
+  \setmainfont[Mapping=tex-text]{Computer Modern Concrete}
+\else
+  % For best results and consistency with the School of Computing, obtain a copy
+  % of Frutiger LT Std and uncomment the following line
+  %\usepackage{FrutigerStd}
+  \usepackage[utf8]{inputenc}
+\fi
+% Uncomment the following line if you have access to the Frutiger Std font
 \usepackage{geometry}
 \geometry{noheadfoot, margin=0.5in}
 \usepackage{prerex}
-\hypersetup{pdfauthor={Copyright (C) 2011--2012 Ryan Kavanagh <rak@debian.org>.
+\hypersetup{pdfauthor={Copyright (C) 2011--2013 Ryan Kavanagh <rak@debian.org>.
 Copying and distribution of this file, with or without modification, are
 permitted in any medium without royalty provided the copyright notice and this
 notice are preserved}}
-%\setcounter{diagheight}{70}
 \setcounter{diagheight}{80}
 \renewcommand{\CourseURL}[3]{http://www.queensu.ca/calendars/artsci/Courses\_of\_Instruction\_in\_Mathematics\_in\_the\_Faculty\_of\_Arts\_and\_Science.html\##3}
 \begin{document}
